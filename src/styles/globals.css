@@ -1,0 +1,233 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+   font-family: "Josefin Sans", serif;
+    font-weight: 400;
+}
+
+* {
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.pageTopBanner {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: #222; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 1000px; */
+}
+
+/* .pageTopBanner::before {
+  content: "";
+  position: absolute;
+  height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+} */
+
+.overlay {
+  position: absolute;
+  height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  /* Ensure it stays above the background */
+}
+
+.pageMiddleBanner {
+  position: relative;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: #222; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 1000px; */
+}
+
+.overlayMiddleBanner {
+  position: absolute;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  /* Ensure it stays above the background */
+}
+
+.globalButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.71429;
+  font-size: 14px;
+  text-transform: capitalize;
+  min-width: 64px;
+  border-radius: 8px;
+  transition: background-color .25s cubic-bezier(.4, 0, .2, 1) 0ms, box-shadow .25s cubic-bezier(.4, 0, .2, 1) 0ms, border-color .25s cubic-bezier(.4, 0, .2, 1) 0ms, color .25s cubic-bezier(.4, 0, .2, 1) 0ms;
+  color: #000000;
+  background-color: #ffffff;
+  height: 38px;
+  padding: 22px 28px;
+}
+
+.globalButton:hover {
+  background-color: #dedede;
+}
+
+.menuButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.71429;
+  font-size: 12px;
+  text-transform: capitalize;
+  min-width: 64px;
+  border-radius: 8px;
+  transition: background-color .25s cubic-bezier(.4, 0, .2, 1) 0ms, box-shadow .25s cubic-bezier(.4, 0, .2, 1) 0ms, border-color .25s cubic-bezier(.4, 0, .2, 1) 0ms, color .25s cubic-bezier(.4, 0, .2, 1) 0ms;
+  color: #ffffff;
+  background-color: #000000;
+  height: 28px;
+  padding: 16px 28px;
+}
+
+.main-header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: auto;
+  right: 0;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  padding: 10px 0px;
+  /* background-color: rgba(0, 0, 0, 0.08); */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
+}
+
+.auto-container {
+  position: static;
+  min-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.overlayImageHeadingBackgrpound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  /* Ensure it stays above the background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageHeadingBackgrpound {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.overlayImageText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  /* Ensure it stays above the background */
+}
+
+.imageText {
+  position: absolute;
+  z-index: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
