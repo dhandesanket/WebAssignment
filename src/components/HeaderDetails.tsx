@@ -73,7 +73,7 @@ function HeaderDetails(data: any) {
     {/* <h2 className="text-lg font-bold">Right Drawer</h2>
     <p>This is a sliding drawer.</p> */}
     {headerData.menuTitles.map((item: any, index: any) => (
-        <a className='' href={item.MenuHeadingUrl}><p key={index} className='ps-2 py-2 px-0 rounded bg-secondary text-white mt-2 fw-bold'>{item.MenuHeading}</p></a>
+        <a key={index} className='' href={item.MenuHeadingUrl}><p  className='ps-2 py-2 px-0 rounded bg-secondary text-white mt-2 fw-bold'>{item.MenuHeading}</p></a>
     ))}
   </div>
 </div>
